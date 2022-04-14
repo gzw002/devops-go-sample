@@ -17,4 +17,4 @@ spec:
     spec:
       containers:
       - name: go
-        image: $REGISTRY/$DOCKERHUB_USERNAME/$APP_NAME
+        image: $REGISTRY/$DOCKERHUB_USERNAME/$APP_NAME:v1
