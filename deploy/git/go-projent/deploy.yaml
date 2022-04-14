@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  namespace: $PROJECT_NAME
+  namespace: go-test
   name: devops-go-sample
   labels:
     app: devops-go-sample
