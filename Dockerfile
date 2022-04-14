@@ -4,6 +4,7 @@ WORKDIR /go/src/devops-go-sample/
 
 COPY . .
 
+RUN go mod init
 RUN go build -o hello-world
 
 FROM alpine:latest
