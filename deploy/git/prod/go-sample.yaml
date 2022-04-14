@@ -6,7 +6,7 @@ metadata:
     component: ks-go-sample
     tier: backend
   name: ks-go-sample
-  namespace: kubesphere-go-prod
+  namespace: go-test
 spec:
   progressDeadlineSeconds: 600
   replicas: 2
@@ -28,7 +28,7 @@ spec:
         tier: backend
     spec:
       containers:
-      - image: $DOCKER_REPO_ADDRESS/$DOCKER_REPO_NAMESPACE/$APP_NAME:$TAG_NAME
+      - image: $REGISTRY/$DOCKERHUB_USERNAME/$APP_NAME:v1
         imagePullPolicy: Always
         name: ks-go
         ports:
