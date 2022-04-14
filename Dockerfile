@@ -1,4 +1,4 @@
-FROM harbor.devops.kubesphere.local:30280/library/golang:1.11.3-alpine3.8 as builder
+FROM golang:1.18 as builder
 
 WORKDIR /go/src/kubesphere.io/devops-go-sample/
 
